@@ -1,17 +1,13 @@
 # EE 399 Spring Quarter 2023: Homework 1 Report
 
 ## Instructor: J. Nathan Kutz
-**Submitted by**: [Ara Vardanyan]
+**Submitted by**: Ara Vardanyan
 
 ## Introduction
 
-This report documents the process and results of the first homework assignment for EE 399 Spring Quarter 2023, under the instruction of Prof. J. Nathan Kutz. The assignment involves analyzing a given dataset and fitting different models to it using least-squares error minimization.
+This report documents the process and results of the first homework assignment for EE 399 Spring Quarter 2023, under the instruction of Dr. J. Nathan Kutz. The assignment involves analyzing a given dataset and fitting different models to it using least-squares error minimization.
 
-## Problem I: GitHub Account Setup
-
-A private GitHub repository has been set up and shared with Prof. J. Nathan Kutz and TAs Trung Le and Nithin Joseph. The repository contains the code, data, and this report for the homework assignment.
-
-## Problem II: Fitting a Model with Least-Squares Error
+## Problem I: Fitting a Model with Least-Squares Error
 
 ### Part (i): Minimizing Error and Determining Parameters
 
@@ -20,10 +16,10 @@ In this part, a custom Python function is implemented to fit the given model `f(
 **Results:**
 
 - Minimum error: [Value]
-- A: [Value]
-- B: [Value]
-- C: [Value]
-- D: [Value]
+- A: 2.17172698
+- B: 0.9093258
+- C: 0.73248851
+- D: 31.45277244
 
 ### Part (ii): Generating 2D Loss Landscapes
 
