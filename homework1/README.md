@@ -28,10 +28,10 @@ Here, the error landscape is visualized in 2D by fixing two parameters and sweep
 **Results:**
 
 - 4 minima were found with an error of 2.92. The corresponding parameters are:
--- A: 1.92, B: 0.89, Error: 2.92
--- A: 1.92, B: 5.39, Error: 2.92
--- A: 2.12, B: 0.89, Error: 2.92
--- A: 2.12, B: 5.39, Error: 2.92
+  - A: 1.92, B: 0.89, Error: 2.92
+  - A: 1.92, B: 5.39, Error: 2.92
+  - A: 2.12, B: 0.89, Error: 2.92
+  - A: 2.12, B: 5.39, Error: 2.92
 - (Include loss landscape plots)
 
 ## Problem III: Fitting Different Models to Training and Test Data
