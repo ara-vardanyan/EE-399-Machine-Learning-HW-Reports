@@ -32,7 +32,7 @@ Here, the error landscape is visualized in 2D by fixing two parameters and sweep
   - A: 1.92, B: 5.39, Error: 2.92
   - A: 2.12, B: 0.89, Error: 2.92
   - A: 2.12, B: 5.39, Error: 2.92
-- (./homework1/ErrorLandscapeAB.png)
+- !(./homework1/ErrorLandscapeAB.png)
 
 ## Problem III: Fitting Different Models to Training and Test Data
 
