@@ -15,11 +15,11 @@ In this part, a custom Python function is implemented to fit the given model `f(
 
 **Results:**
 
-- Minimum error: [Value]
-- A: 2.17172698
-- B: 0.9093258
-- C: 0.73248851
-- D: 31.45277244
+- Least-squares error: 2.53678
+- A: 2.1717
+- B: 0.9093
+- C: 0.7325
+- D: 31.4528
 
 ### Part (ii): Generating 2D Loss Landscapes
 
@@ -27,7 +27,11 @@ Here, the error landscape is visualized in 2D by fixing two parameters and sweep
 
 **Results:**
 
-- Number of minima found: [Value]
+- 4 minima were found with an error of 2.92. The corresponding parameters are:
+-- A: 1.92, B: 0.89, Error: 2.92
+-- A: 1.92, B: 5.39, Error: 2.92
+-- A: 2.12, B: 0.89, Error: 2.92
+-- A: 2.12, B: 5.39, Error: 2.92
 - (Include loss landscape plots)
 
 ## Problem III: Fitting Different Models to Training and Test Data
