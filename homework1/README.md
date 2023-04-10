@@ -1,12 +1,7 @@
 # EE 399 Spring Quarter 2023: Homework 1 Report
 
 ## Instructor: J. Nathan Kutz
-
-**Due Date**: 5pm on 4/7
-
-**Submitted by**: [Your Name]
-
-**GitHub Repository**: [Link to your private GitHub repository]
+**Submitted by**: [Ara Vardanyan]
 
 ## Introduction
 
