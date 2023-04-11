@@ -16,10 +16,11 @@ In this part, a custom Python function is implemented to fit the given model `f(
 **Results:**
 
 - Least-squares error: 2.53678
-- A: 2.1717
-- B: 0.9093
-- C: 0.7325
-- D: 31.4528
+- Parameters
+  - A: 2.1717
+  - B: 0.9093
+  - C: 0.7325
+  - D: 31.4528
 
 ### Part (ii): Generating 2D Loss Landscapes
 
