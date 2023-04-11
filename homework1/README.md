@@ -6,14 +6,31 @@ Ara Vardanyan
 
 **Abstract**:
 
-In this assignment, we fit various models to a dataset for the purpose of experimentation and discovering the flaws in different types of models. We fit these models using minimization of least-squares error to optimize the parameters. We explore the many minima found in different combinations of parameter tuning by generating 2d error landscapes. We also fit line, parabola, and 19th-degree polynomial models to the data with different splits of the dataset and discuss how and why the results may differ.
-
+In this assignment, we will analyze a sample dataset using various mathematical models. Our goal is to fit these models to the data using least-squares error and explore the minima found in different combinations of parameter tuning by generating 2D error landscapes. We will also experiment with different models such as line, parabola, and 19th-degree polynomial and compare their performance on different splits of the data. Through these exercises, we aim to gain a deeper understanding of the strengths and weaknesses of different models and techniques for machine learning.
 
 ## Introduction
 
-In this assignment, we will explore the process of analyzing data using various mathematical models and techniques. Given a dataset, we will fit a model of the form f(x) = A*cos(Bx) + Cx + D to the data using least-squares error. We will then write code to find the minimum error and determine the optimal values for the parameters A, B, C, and D. Next, we will fix two of these parameters and sweep through values of the other two to generate a 2D loss landscape. We will visualize the results using pcolor and identify the number of minima present as we sweep through the parameters.
+We will begin by fitting a model of the form `f(x) = A*cos(Bx) + Cx + D` to the data using least-squares error. This technique allows us to find the optimal values for the parameters A, B, C, and D that minimize the error between the model predictions and the observed data. Next, we will fix two of these parameters and sweep through values of the other two to generate a 2D loss landscape. This will allow us to visualize how the error changes as we vary different combinations of parameters.
 
-In addition to fitting this specific model to the data, we will also experiment with other models such as line, parabola, and 19th-degree polynomial. We will split the data into training and test sets and fit these models to the training data. We will then compute the least-square error for each model on both the training and test data. Finally, we will repeat this process using a different split of the data into training and test sets and compare the results.
+In addition to fitting this specific model to the data, we will also experiment with other models such as line, parabola, and 19th-degree polynomial. We will split the data into training and test sets and fit these models to the training data. We will then compute the least-square error for each model on both the training and test data. This will allow us to compare how well different models fit the data.
+
+Through this assignment, we aim to gain a deeper understanding of how different models fit with data. By experimenting with different models and techniques, we hope to develop a better understanding of their strengths and weaknesses and learn how to choose the best model for a given dataset.
+
+## Theoretical Background
+
+In this report, we will be exploring the process of fitting mathematical models to data. One of the key concepts that underlies this process is the idea of least-squares error. This is a technique for finding the optimal values for the parameters of a model that minimize the error between the model predictions and the observed data.
+
+The least-squares error is defined as the sum of the squared differences between the observed values and the predicted values of a model. Mathematically, this can be expressed as:
+
+E = ¼(1~n) ∑n j=1(f (xj )−yj )2
+
+where E is the least-squares error, n is the number of data points, f(xj) is the predicted value of the model for the j-th data point, and yj is the observed value for the j-th data point.
+
+To find the optimal values for the parameters of a model that minimize the least-squares error, we can use various optimization techniques such as gradient descent or Newton's method. These techniques allow us to iteratively adjust the values of the parameters until we find a set of values that minimize the least-squares error.
+
+In addition to least-squares error, another important concept in this report is the idea of a loss landscape. A loss landscape is a visualization of how the error changes as we vary different combinations of parameters. By generating a 2D loss landscape, we can see how the error changes as we sweep through values of two parameters while keeping the other two fixed. This can help us identify any minima present in the loss landscape and gain insights into how different combinations of parameter values affect the performance of our model.
+
+Finally, it is important to understand the concept of overfitting when fitting mathematical models to data. Overfitting occurs when a model is too complex and fits the training data too well, resulting in poor performance on new data. To avoid overfitting, it is important to choose an appropriate level of complexity for our model and to evaluate its performance on both training and test data.
 
 
 ## Problem I: Fitting a Model with Least-Squares Error
