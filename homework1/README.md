@@ -31,6 +31,21 @@ To find the optimal values for the parameters of a model that minimize the least
 
 In addition to least-squares error, another important concept in this report is the idea of a loss or error landscape. An error landscape is a visualization of how the error changes as we vary different combinations of parameters. By generating a 2D error landscape, we can see how the error changes as we sweep through values of two parameters while keeping the other two fixed. This can help us identify any minima present in the error landscape and gain insights into how different combinations of parameter values affect the performance of our model.
 
+## Algorithm Implementation and Development
+
+> Initialization of sample data:
+```
+X = np.arange(0, 31)
+Y = np.array([30, 35, 33, 32, 34, 37, 39, 38, 36, 36, 37, 39, 42, 45, 45, 41,
+40, 39, 42, 44, 47, 49, 50, 49, 46, 48, 50, 53, 55, 54, 53])
+N = len(X)
+```
+
+### Problem I: Fitting a Model with Least-Squares Error
+
+
+
+
 ## Problem I: Fitting a Model with Least-Squares Error
 
 ### Part (i): Minimizing Error and Determining Parameters
