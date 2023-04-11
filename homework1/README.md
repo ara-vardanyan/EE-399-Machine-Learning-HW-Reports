@@ -29,10 +29,7 @@ where E is the least-squares error, n is the number of data points, f(x<sub>j</s
 
 To find the optimal values for the parameters of a model that minimize the least-squares error, we can use various optimization techniques such as gradient descent or Newton's method. These techniques allow us to iteratively adjust the values of the parameters until we find a set of values that minimize the least-squares error.
 
-In addition to least-squares error, another important concept in this report is the idea of a loss landscape. A loss landscape is a visualization of how the error changes as we vary different combinations of parameters. By generating a 2D loss landscape, we can see how the error changes as we sweep through values of two parameters while keeping the other two fixed. This can help us identify any minima present in the loss landscape and gain insights into how different combinations of parameter values affect the performance of our model.
-
-Finally, it is important to understand the concept of overfitting when fitting mathematical models to data. Overfitting occurs when a model is too complex and fits the training data too well, resulting in poor performance on new data. To avoid overfitting, it is important to choose an appropriate level of complexity for our model and to evaluate its performance on both training and test data.
-
+In addition to least-squares error, another important concept in this report is the idea of a loss or error landscape. An error landscape is a visualization of how the error changes as we vary different combinations of parameters. By generating a 2D error landscape, we can see how the error changes as we sweep through values of two parameters while keeping the other two fixed. This can help us identify any minima present in the error landscape and gain insights into how different combinations of parameter values affect the performance of our model.
 
 ## Problem I: Fitting a Model with Least-Squares Error
 
