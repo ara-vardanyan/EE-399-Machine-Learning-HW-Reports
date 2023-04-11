@@ -248,29 +248,12 @@ E = (1/n) * ∑(f(x<sub>j</sub>) - y<sub>j</sub>)<sup>2</sup> for j = 1 to n
 </p>
 
 
+## Summary and Conclusions
 
-### Part (iv): Fitting Models to First 10 and Last 10 Data Points
+### Problem III & IV
 
-The same models are fit to the first 10 and last 10 data points as training data. The least-squares error is computed for each model on the test data, which consists of the 10 held out middle data points.
+The first thing to note from the results in this problem is the difficulty the 19th degree polynomial has with the testing set. It has 0 loss on the training sets for both data splits but an extremely large loss on both testing sets. This can be attributed to 'polynomial wiggle'. The high degree of the polynomial causes it to overfit to the training data which renders the model useless for making predictions on data it has not seen. This is a big problem as the goal of machine learning is to create models that generalize well.
 
-**Results:**
+Splitting the data with the first 20 data points as the training data and the last 10 data points as the testing data tests the models' abilities to extrapolate data. Splitting the data with the first 10 and last 10 data points as the training set and the middle 10 data points as the testing set tests the models' abilities to interpolate data. All models had a lower loss on both the training and testing set for the interpolation task. From this we can conclude that these models perform interpolation better than extrapolation. Extrapolation is a more difficult task in most cases as it gives less context or information as to what the next value could be so this behavior from the model is probable and as such, it is expected.
 
-- Least-squares error on training data:
-  - linear: 3.4287
-  - parabola: 3.4256
-  - 19th-degree polynomial: 0.0000
-- Least-squares error on test data:
-  - linear: 8.6454
-  - parabola: 8.4437
-  - 19th-degree polynomial: 180926.4988
-
-
-
-## Comparison of Results
-
-
-(Include a brief comparison of the results obtained in parts (iii) and (iv) and any insights or observations.)
-
-## Conclusion
-
-This report summarizes the process and results of fitting various models to the provided dataset using least-squares error minimization. The models are evaluated on their training and test data performance, and the results are compared to gain insights into the behavior of the different models.
+Finally, we can seee that the parabola performed worse than the linear model with the extrapolation task but slightly better with the interpolation. The nature of a 2nd degree polynomial is to bend once. I believe that since the polynomial had the context of the last 10 data points, the fit for the interpolation chose a better point for it to bend to minimize the loss leading to the results we mentioned. The data set was roughly linear so it makes sense that the polynomial struggles with extrapolating this.
