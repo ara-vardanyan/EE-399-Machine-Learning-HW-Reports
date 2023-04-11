@@ -50,8 +50,14 @@ In this section, a line, parabola, and 19th degree polynomial are fit to the fir
 
 **Results:**
 
-- Least-squares error for line, parabola, and 19th degree polynomial on training data: [Values]
-- Least-squares error for line, parabola, and 19th degree polynomial on test data: [Values]
+- Least-squares error on training data:
+  - linear: 5.0299
+  - parabola: 4.5179
+  - 19th-degree polynomial: 0.0000
+- Least-squares error on test data:
+  - linear: 11.3141
+  - parabola: 75.9277
+  - 19th-degree polynomial: 38454308324079644442624.0000
 
 ### Part (iv): Fitting Models to First 10 and Last 10 Data Points
 
@@ -59,7 +65,14 @@ The same models are fit to the first 10 and last 10 data points as training data
 
 **Results:**
 
-- Least-squares error for line, parabola, and 19th degree polynomial on test data: [Values]
+- Least-squares error on training data:
+  - linear: 3.4287
+  - parabola: 3.4256
+  - 19th-degree polynomial: 0.0000
+- Least-squares error on test data:
+  - linear: 8.6454
+  - parabola: 8.4437
+  - 19th-degree polynomial: 180926.4988
 
 ## Comparison of Results
 
