@@ -25,7 +25,7 @@ The specific loss function chosen for this assignment was least-quares error. Th
 E = (1/n) * ∑(f(x<sub>j</sub>) - y<sub>j</sub>)<sup>2</sup> for j = 1 to n
 
 
-where E is the least-squares error, n is the number of data points, f(x<sub>j) is the predicted value of the model for the j-th data point, and y<sub>j is the observed value for the j-th data point.
+where E is the least-squares error, n is the number of data points, f(x<sub>j</sub>) is the predicted value of the model for the j-th data point, and y<sub>j</sub> is the observed value for the j-th data point.
 
 To find the optimal values for the parameters of a model that minimize the least-squares error, we can use various optimization techniques such as gradient descent or Newton's method. These techniques allow us to iteratively adjust the values of the parameters until we find a set of values that minimize the least-squares error.
 
