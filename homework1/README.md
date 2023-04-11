@@ -38,8 +38,9 @@ Here, the error landscape is visualized in 2D by fixing two parameters and sweep
 </p>
   
 - Below is the error landscape for all combinations of 2 fixed parameters and 2 swept parameters.
-![](./figures/ErrorLandscapeAllCombos.png)
-
+<p align='center'>
+  <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/582e1a1eb501f1eff2d2bf364d59e76e6c26b80c/homework1/figures/ErrorLandscapeAllCombos.png'>
+</p>
 
 ## Problem III: Fitting Different Models to Training and Test Data
 
