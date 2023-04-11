@@ -34,7 +34,7 @@ Here, the error landscape is visualized in 2D by fixing two parameters and sweep
   - A: 2.12, B: 5.39, Error: 2.92  
 
 <p align='center'>
-![](./figures/ErrorLandscapeAB.png)
+  <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW Reports/blob/582e1a1eb501f1eff2d2bf364d59e76e6c26b80c/homework1/figures/ErrorLandscapeAB.png'>
 </p>
   
 - Below is the error landscape for all combinations of 2 fixed parameters and 2 swept parameters.
