@@ -27,7 +27,7 @@ Here, the error landscape is visualized in 2D by fixing two parameters and sweep
 
 **Results:**
 
-- 4 minima were found with an error of 2.92. The corresponding parameters are:
+- With C and D fixed and sweeping through 100 values for both A and B, 4 minima were found with an error of 2.92. The corresponding parameters were:
   - A: 1.92, B: 0.89, Error: 2.92
   - A: 1.92, B: 5.39, Error: 2.92
   - A: 2.12, B: 0.89, Error: 2.92
