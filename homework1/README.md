@@ -23,6 +23,8 @@ One of the key concepts that underlies the process of machine learning is the er
 The specific loss function chosen for this assignment was least-quares error. The least-squares error is defined as the sum of the squared differences between the observed values and the predicted values of a model. Mathematically, this can be expressed as:
 
 E = ¼(1~n) ∑n j=1(f (xj )−yj )2
+E = (1/n) * ∑(f(x<sub>j</sub>) - y<sub>j</sub>)<sup>2</sup> for j = 1 to n
+
 
 where E is the least-squares error, n is the number of data points, f(xj) is the predicted value of the model for the j-th data point, and yj is the observed value for the j-th data point.
 
