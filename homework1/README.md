@@ -250,6 +250,9 @@ E = (1/n) * ∑(f(x<sub>j</sub>) - y<sub>j</sub>)<sup>2</sup> for j = 1 to n
 
 ## Summary and Conclusions
 
+### Problem II
+The top 5 minima for each set of 2 fixed and 2 swept parameters were roughly the same. If the use case of model requires high precision accuracy, the parameters that lead to the top local minima may need to be chosen. Otherwise if the use case does not require a high level of accuracy, there are many sets of parameter values to choose from. Personally, I would choose the best set because why not.
+
 ### Problem III & IV
 
 The first thing to note from the results in this problem is the difficulty the 19th degree polynomial has with the testing set. It has 0 loss on the training sets for both data splits but an extremely large loss on both testing sets. This can be attributed to 'polynomial wiggle'. The high degree of the polynomial causes it to overfit to the training data which renders the model useless for making predictions on data it has not seen. This is a big problem as the goal of machine learning is to create models that generalize well.
