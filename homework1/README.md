@@ -18,9 +18,9 @@ Through this assignment, we aim to gain a deeper understanding of how different 
 
 ## Theoretical Background
 
-In this report, we will be exploring the process of fitting mathematical models to data. One of the key concepts that underlies this process is the idea of least-squares error. This is a technique for finding the optimal values for the parameters of a model that minimize the error between the model predictions and the observed data.
+One of the key concepts that underlies the process of machine learning is the error or loss function. An error or loss function is a mathematical function that quantifies how well a model fits a given dataset. The error or loss function measures the difference between the predicted values of the model and the observed values in the data. The goal of fitting a model to data is to find the values for the model’s parameters that minimize the error or loss function.
 
-The least-squares error is defined as the sum of the squared differences between the observed values and the predicted values of a model. Mathematically, this can be expressed as:
+The specific loss function chosen for this assignment was least-quares error. The least-squares error is defined as the sum of the squared differences between the observed values and the predicted values of a model. Mathematically, this can be expressed as:
 
 E = ¼(1~n) ∑n j=1(f (xj )−yj )2
 
