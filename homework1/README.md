@@ -60,6 +60,10 @@ In this section, a line, parabola, and 19th degree polynomial are fit to the fir
   - parabola: 75.9277
   - 19th-degree polynomial: 38454308324079644442624.0000
 
+<p align='center'>
+  <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/fe3d5d7eb7326b19c9d62ad381ceb5f4ce496467/homework1/figures/ExtrapolatedModelFits.png'>
+</p>
+
 ### Part (iv): Fitting Models to First 10 and Last 10 Data Points
 
 The same models are fit to the first 10 and last 10 data points as training data. The least-squares error is computed for each model on the test data, which consists of the 10 held out middle data points.
@@ -75,7 +79,12 @@ The same models are fit to the first 10 and last 10 data points as training data
   - parabola: 8.4437
   - 19th-degree polynomial: 180926.4988
 
+<p align='center'>
+  <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/fe3d5d7eb7326b19c9d62ad381ceb5f4ce496467/homework1/figures/InterpolatedModelFits.png'>
+</p>
+
 ## Comparison of Results
+
 
 (Include a brief comparison of the results obtained in parts (iii) and (iv) and any insights or observations.)
 
