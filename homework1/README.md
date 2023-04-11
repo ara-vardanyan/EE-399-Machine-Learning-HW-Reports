@@ -55,7 +55,7 @@ The model is then fit to the sample dataset.
 params, params_covariance = scipy.optimize.curve_fit(func, X, Y)
 ```
 
-The least squares-error is then determined by first calculating the fitted values x<sub>j</sub> then applying the least-squares error formula:
+The least squares-error is then determined by first calculating the fitted values x<sub>j</sub>, then applying the least-squares error formula:
 
 E = (1/n) * ∑(f(x<sub>j</sub>) - y<sub>j</sub>)<sup>2</sup> for j = 1 to n
 
