@@ -1,8 +1,11 @@
 # Experimenting with Curve Fitting
 
-**Author**: Ara Vardanyan
+**Author**:  
+
+Ara Vardanyan
 
 **Abstract**:
+
 In this assignment, we fit various models to a dataset for the purpose of experimentation and discovering the flaws in different types of models. We fit these models using minimization of least-squares error to optimize the parameters. We explore the many minima found in different combinations of parameter tuning by generating 2d error landscapes. We also fit line, parabola, and 19th-degree polynomial models to the data with different splits of the dataset and discuss how and why the results may differ.
 
 
