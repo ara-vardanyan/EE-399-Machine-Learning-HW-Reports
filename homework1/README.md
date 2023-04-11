@@ -203,7 +203,7 @@ E = (1/n) * ∑(f(x<sub>j</sub>) - y<sub>j</sub>)<sup>2</sup> for j = 1 to n
 
 #### Loss Landscapes
 
-<p align='center'>
+<p>
   <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/fe3d5d7eb7326b19c9d62ad381ceb5f4ce496467/homework1/figures/ErrorLandscapeAllCombos.png'>
 </p>
 
@@ -228,7 +228,7 @@ E = (1/n) * ∑(f(x<sub>j</sub>) - y<sub>j</sub>)<sup>2</sup> for j = 1 to n
 | Parabola              | 4.5179                               | 75.9277                               |
 | 19th-degree Polynomial| 0.0000                               | 3.8454 x 10<sup>22</sup>
 
-<p align='center'>
+<p>
   <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/fe3d5d7eb7326b19c9d62ad381ceb5f4ce496467/homework1/figures/ExtrapolatedModelFits.png'>
 </p>
 
