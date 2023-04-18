@@ -184,19 +184,19 @@ plt.show()
 ### Problem (a): Computing and plotting the correlation matrix between the first 100 faces
 
 <p>
-  <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/fe3d5d7eb7326b19c9d62ad381ceb5f4ce496467/homework2/figures/ProblemACorrelationMatrix.png'>
+  <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/a765c023cce8d71a7b5561b259970bd9a6b45e92/homework2/figures/ProblemACorrelationMatrix.png'>
 </p>
 
 ### Problem (b): Plotting most and least correlated faces
 
 <p>
-  <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/fe3d5d7eb7326b19c9d62ad381ceb5f4ce496467/homework2/figures/ProblemBMostAndLeastCorrelatedFaces.png'>
+  <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/a765c023cce8d71a7b5561b259970bd9a6b45e92/homework2/figures/ProblemBMostAndLeastCorrelatedFaces.png'>
 </p>
 
 ### Problem (c): Computing and plotting the correlation matrix for specified images
 
 <p>
-  <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/fe3d5d7eb7326b19c9d62ad381ceb5f4ce496467/homework2/figures/ProblemCCorrelationMatrixSpecifiedImages.png'>
+  <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/a765c023cce8d71a7b5561b259970bd9a6b45e92/homework2/figures/ProblemCCorrelationMatrixSpecifiedImages.png'>
 </p>
 
 ### Problem (f): Computing the norm of the difference of absolute values of the first eigenvector `v_1` and the first SVD mode `u_1`
@@ -207,7 +207,7 @@ plt.show()
 ### Problem (g): Compute the percentage of variance captured by each of the first 6 SVD modes and plotting the first 6 SVD modes
 
 <p>
-  <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/fe3d5d7eb7326b19c9d62ad381ceb5f4ce496467/homework2/figures/ProblemGFirst6SVDModes.png'>
+  <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/a765c023cce8d71a7b5561b259970bd9a6b45e92/homework2/figures/ProblemGFirst6SVDModes.png'>
 </p>
 
 | SVD mode | Percentage of variance captured |
