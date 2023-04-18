@@ -1,10 +1,11 @@
 # Exploring Correlation and Dimensionality Reduction Techniques on Yalefaces Dataset
 
-**Author**:  
+**Author**:
 
 Ara Vardanyan
 
 **Abstract**:
+
 This report investigates relationships between 2414 grayscale face images using techniques such as correlation matrices, eigenvectors, and Singular Value Decomposition (SVD). We analyze image correlations, identify highly correlated and uncorrelated pairs, and compute principal component directions. Comparisons between eigenvectors and SVD modes are conducted, followed by an examination of variance captured by SVD modes. The study provides insights into image relationships under different lighting conditions, demonstrating the effectiveness of these techniques in image analysis.
 
 ---
