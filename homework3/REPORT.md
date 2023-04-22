@@ -398,7 +398,7 @@ MAKRE DUSRE TO JENJFEIFIEFNFE INTERPRETATION OF U E AND V MATRICES
 ### Projecting digits onto 3 V-modes on a 3D plot
 
 <p>
-  <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/a765c023cce8d71a7b5561b259970bd9a6b45e92/homework2/figures/ProblemGFirst6SVDModes.png'>
+  <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/3a079e224b16ba24ab7f2b004d358e00f1b0b82d/homework3/figures/VModesProjection3D.png'>
 </p>
 
 ## 2 and 3 Digit LDA classifiers accuracy
