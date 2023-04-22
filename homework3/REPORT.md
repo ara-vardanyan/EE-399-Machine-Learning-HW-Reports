@@ -65,7 +65,7 @@ Perform SVD decomposition
 U, S, Vt = np.linalg.svd(X_reshaped, full_matrices=False)
 ```
 
-_Interpretation of U, Σ and $\V^T$_
+_Interpretation of U, Σ and $ \V^T $_
 
 U: This is an orthogonal matrix containing the left singular vectors. In the context of MNIST, the columns of the U matrix represent a basis for the "image space". These vectors can be thought of as essential features or components that define the dataset's structure. Each column can be reshaped back into a 28x28 image to visualize the primary patterns in the dataset, which are often called "eigen-digits".
 
