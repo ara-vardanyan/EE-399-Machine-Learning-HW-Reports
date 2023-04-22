@@ -376,19 +376,19 @@ print_table(sorted_dt_digit_pair_accuracies, "Decision Tree")
 
 Top 9 SVD Modes
 <p>
-  <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/a765c023cce8d71a7b5561b259970bd9a6b45e92/homework2/figures/ProblemGFirst6SVDModes.png'>
+  <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/3e2ec773f459d2ff85d050ebf43d3327b09407bb/homework3/figures/SVDModes.png'>
 </p>
 
 ### Singular Value Spectrum
 
 Singular Value Spectrum
 <p>
-  <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/a765c023cce8d71a7b5561b259970bd9a6b45e92/homework2/figures/ProblemGFirst6SVDModes.png'>
+  <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/3e2ec773f459d2ff85d050ebf43d3327b09407bb/homework3/figures/SingularValueSpectrum.png'>
 </p>
 
 ### Cumulative Variance Explained
 <p>
-  <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/a765c023cce8d71a7b5561b259970bd9a6b45e92/homework2/figures/ProblemGFirst6SVDModes.png'>
+  <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/3e2ec773f459d2ff85d050ebf43d3327b09407bb/homework3/figures/CumulativeVarianceExplained.png'>
 </p>
 
 Rank r for 95% variance: 102
