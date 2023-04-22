@@ -65,7 +65,16 @@ Perform SVD decomposition
 U, S, Vt = np.linalg.svd(X_reshaped, full_matrices=False)
 ```
 
+    Interpretation of U, Σ and $V^T$
+    U: This is an orthogonal matrix containing the left singular vectors. In the context of MNIST, the columns of the U matrix represent a basis for the "image space". These vectors can be thought of as essential features or components that define the dataset's structure. Each column can be reshaped back into a 28x28 image to visualize the primary patterns in the dataset, which are often called "eigen-digits".
+
+    Σ (Sigma): This is a diagonal matrix containing the singular values in descending order. The singular values represent the importance of each corresponding eigen-digit or component in the U matrix. Larger singular values indicate more significant features, while smaller values correspond to less important or noisy features. In practice, many of the smaller singular values can be discarded to achieve dimensionality reduction and noise filtering.
+
+    $V^T$ (V transpose): This is another orthogonal matrix containing the right singular vectors. In the context of MNIST, the rows of V^T represent the coefficients or weights for each eigen-digit in the U matrix. These weights indicate how much each eigen-digit contributes to reconstructing the original images. By multiplying the matrices U, Σ, and V^T, one can reconstruct the original dataset or a close approximation if dimensionality reduction was applied.
+
+
 Plotting the top 9 most important SVD modes
+
 ```
 num_modes = 0
 fig, axes = plt.subplots(3, 3, figsize=(8, 8))
