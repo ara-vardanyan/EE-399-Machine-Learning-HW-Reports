@@ -391,7 +391,6 @@ print_table(sorted_dt_digit_pair_accuracies, "Decision Tree")
 
 ### Singular Value Spectrum
 
-Singular Value Spectrum
 <p>
   <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/3e2ec773f459d2ff85d050ebf43d3327b09407bb/homework3/figures/SingularValueSpectrum.png'>
 </p>
