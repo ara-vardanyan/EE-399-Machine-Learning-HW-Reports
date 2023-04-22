@@ -410,7 +410,7 @@ Rank r for 95% cumulative variance explained: 102
   <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/3a079e224b16ba24ab7f2b004d358e00f1b0b82d/homework3/figures/VModesProjection3D.png'>
 </p>
 
-## 2 and 3 Digit LDA classifiers accuracy
+### 2 and 3 Digit LDA classifiers accuracy
 
 | Classifier         | Test Set Accuracy  | Train Set Accuracy |
 |--------------------|--------------------|--------------------|
@@ -418,7 +418,7 @@ Rank r for 95% cumulative variance explained: 102
 | LDA ('0', '2', '5')| 96.15%             | 96.22%             |
 | LDA ('0' - '9')    | 86.84%             | 87.14%             |
 
-## LDA classifier accuracy on each unique pair of digits (sorted by highest accuracy on test set)
+### LDA classifier accuracy on each unique pair of digits (sorted by highest accuracy on test set)
 
 | Rank | Digit Pair | Test Set Accuracy | Train Set Accuracy |
 |------|------------|-------------------|--------------------|
@@ -468,14 +468,14 @@ Rank r for 95% cumulative variance explained: 102
 |  44  | ('5', '8') |           95.34%  |             96.06% |
 |  45  | ('4', '9') |           95.18%  |             95.76% |
 
-## SVM and Decision Tree classifiers accuracy on all 10 digits (0-9)
+### SVM and Decision Tree classifiers accuracy on all 10 digits (0-9)
 
 | Classifier          | Test Set Accuracy | Train Set Accuracy |
 |---------------------|-------------------|--------------------|
 | SVM classifier      | 90.65%            | 91.03%             |
 | Decision Tree       | 82.88%            | 100.00%            |
 
-## SVM classifier accuracy on each unique pair of digits (sorted by highest accuracy on test set)
+### SVM classifier accuracy on each unique pair of digits (sorted by highest accuracy on test set)
 
 SVM Classifier
 Rank | Digit Pair | Test Set Accuracy | Train Set Accuracy
@@ -526,7 +526,7 @@ Rank | Digit Pair | Test Set Accuracy | Train Set Accuracy
   44 | ('3', '5')    |            95.97% |           96.58%
   45 | ('5', '8')    |            95.88% |           96.59%
 
-## Decision Tree classifier accuracy on each unique pair of digits (sorted by highest accuracy on test set)
+### Decision Tree classifier accuracy on each unique pair of digits (sorted by highest accuracy on test set)
 
 Decision Tree Classifier
 Rank | Digit Pair | Test Set Accuracy | Train Set Accuracy
