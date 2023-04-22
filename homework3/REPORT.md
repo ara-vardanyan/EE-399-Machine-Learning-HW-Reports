@@ -102,7 +102,7 @@ plt.show()
 # Determine the number of modes necessary for good image reconstruction
 desired_variance = 0.95
 rank_r = np.argmax(cumulative_variance_explained >= desired_variance) + 1
-print(f"Rank r for 95% variance: {rank_r}")
+print(f"Rank r for 95% cumulative variance explained: {rank_r}")
 ```
 
 ### Projecting digits onto 3 V-modes on a 3D plot
@@ -212,6 +212,17 @@ train_accuracy_3_digits = test_lda_classifier(lda_classifier_3_digits, X_train, 
 
 print(f"LDA classifier accuracy on test sets of digits {digits_3}: {test_accuracy_3_digits * 100:.2f}%")
 print(f"LDA classifier accuracy on train sets of digits {digits_3}: {train_accuracy_3_digits * 100:.2f}%")
+```
+
+Training and testing LDA on 10 digits
+```
+digits_10 = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+lda_classifier_10_digits = train_lda_classifier(X_train, Y_train, digits_10)
+test_accuracy_10_digits = test_lda_classifier(lda_classifier_10_digits, X_test, Y_test, digits_10)
+train_accuracy_10_digits = test_lda_classifier(lda_classifier_10_digits, X_train, Y_train, digits_10)
+
+print(f"LDA classifier accuracy on test sets of digits {digits_10}: {test_accuracy_10_digits * 100:.2f}%")
+print(f"LDA classifier accuracy on train sets of digits {digits_10}: {train_accuracy_10_digits * 100:.2f}%")
 ```
 
 Training and testing LDA on each unique pair of digits to find the easiest and hardest pairs of digits to separate
@@ -374,7 +385,6 @@ print_table(sorted_dt_digit_pair_accuracies, "Decision Tree")
 
 ### Top 9 SVD Modes
 
-Top 9 SVD Modes
 <p>
   <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/3e2ec773f459d2ff85d050ebf43d3327b09407bb/homework3/figures/SVDModes.png'>
 </p>
@@ -391,9 +401,8 @@ Singular Value Spectrum
   <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/3e2ec773f459d2ff85d050ebf43d3327b09407bb/homework3/figures/CumulativeVarianceExplained.png'>
 </p>
 
-Rank r for 95% variance: 102
+Rank r for 95% cumulative variance explained: 102
 
-MAKRE DUSRE TO JENJFEIFIEFNFE INTERPRETATION OF U E AND V MATRICES
 
 ### Projecting digits onto 3 V-modes on a 3D plot
 
@@ -403,10 +412,11 @@ MAKRE DUSRE TO JENJFEIFIEFNFE INTERPRETATION OF U E AND V MATRICES
 
 ## 2 and 3 Digit LDA classifiers accuracy
 
-| Classifier         | Train Set | Test Set |
-|--------------------|-----------|----------|
-| LDA ('0', '2')     | 98.57%    | 98.38%   |
-| LDA ('1', '3', '5')| 96.11%    | 95.58%   |
+| Classifier         | Test Set Accuracy  | Train Set Accuracy |
+|--------------------|--------------------|--------------------|
+| LDA ('0', '2')     | 98.38%             | 98.57%             |
+| LDA ('0', '2', '5')| 96.15%             | 96.22%             |
+| LDA ('0' - '9')    | 86.84%             | 87.14%             |
 
 ## LDA classifier accuracy on each unique pair of digits (sorted by highest accuracy on test set)
 
@@ -567,14 +577,14 @@ Rank | Digit Pair | Test Set Accuracy | Train Set Accuracy
   44 | ('7', '9')    |            91.06% |          100.00%
   45 | ('4', '9')    |            89.07% |          100.00%
 
-
-
-
-
-
-
-
 ---
 
 ## Summary and Conclusions
 
+In this report, we first implemented SVD to reduce the dimensionality of the MNSIT data set images. The top 9 SVD modes were plotted to visualize how the data was explained. The singular value spectrum was then plotted with the SVD and was observed to be in the form of an exponential decay. From the singular value spectrum and cumulative variance explained graphs, we could see that most of the variance was explained with about 80-100 modes. The rank required to explain 95% of the cumulative variance was calculated to be 102. Thus, we proceeded with 102 modes for our reduced dimensionality data representation when constructing classifiers. Our final plot showed the projection of digits onto 3 V-modes in a 3D plot.
+
+We then moved on to building a linear discriminant analysis classifier (LDA). We trained our LDA on classifying two random digits and achieved an accuracy of 98.38% on the testing set. We then trained an LDA on classifying the same 2 digits but added one more (3 total) and observed a performance drop of about 2%. Since two of the digits were held constant, we can infer that the performance drop was caused by adding another digit. The LDA classifier was then trained on every unique pair of digits from 0-9. The digits '6' and '7' were observed to be the easiest pair to separate with an accuracy of 99.75% on the test set. The digits '4' and '9' were observed to be the most difficult pair to separate with an accuracy of 95.18%. These discrepancies in performance can mainly be attributed to the similarity of the shapes of the digits. Digits that are more similar are harder for the classifier to differentiate, and vice versa.
+
+Finally, we built support vector machine (SVM) and decision tree classifiers. The SVM and decision tree classifiers were first trained to classify all 10 digits. The SVM classifier outperformed the decision tree by about 8% (90.65% vs 82.88%) on the test set. The SVM's accuracy of 91.03% on the training set was very close to its test set accuracy. Meanwhile, the decision tree scored 100% on the training set. These results lead us to the conclusion that the decision tree performed worse because it overfit to the training data. It is important to note that no guardrails were put in place to prevent overfitting for either model. It may be fair to assume that the SVM classifier from the scikit package has a built in mechanism for preventing overtraining.
+
+The SVM and decision tree classifiers were then trained on each unique pair of digits separately as before with the LDA. The SVM and decision tree both had the easiest time separating the digits '0' and '1'. This is different from what we was with the LDA where it had the easiest time separating '6' and '7'. '0' and '1' were however ranked as the third easiest pair of digits to classify by the LDA. This means that these digits are fundamentally easier to classify due to the difference in their shapes. Similarly to the LDA, the decision tree had the hardest time separating the digits '4' and '9' while the SVM had the hardest time with the digits '5' and '8'. While not dead last, '4' and '9' were however one of the hardest pairs of digits for the SVM to separate. Overall the SVM had the best performance out of all 3 models. The SVM, LDA, and decision tree scored 90.65%, 86.84%, 82.88% respectively on the test set for the classification task of all 10 digits (0 - 9).
