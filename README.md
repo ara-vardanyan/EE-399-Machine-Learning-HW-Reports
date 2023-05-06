@@ -7,7 +7,7 @@ Professor: Dr. Nathan Kutz
 
 
 ## Table of Contents
-- [Homework 1:](./homework1/REPORT.md)
+- [Homework 1:](./homework1/REPORT.md) Experimenting with Curve Fitting
 - [Homework 2:](./homework2/REPORT.md) Exploring Correlation and Dimensionality Reduction Techniques on Yalefaces Dataset
 - [Homework 3:](./homework3/REPORT.md) Analysis and Classification of the MNIST Dataset using SVD, LDA, SVM, and Decision Trees
 - [Homework 4:](./homework4/REPORT.md) Neural Network Analysis and Model Comparison on Interpolation and Extrapolation Tasks and MNIST Data Set
