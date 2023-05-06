@@ -10,4 +10,4 @@ Professor: Dr. Nathan Kutz
 - [Homework 1](./homework1/REPORT.md)
 - [Homework 2](./homework2/REPORT.md)
 - [Homework 3](./homework3/REPORT.md)
-- [Homework 4](./homework4/REPORT.md): Neural Network Analysis and Model Comparison on Interpolation and Extrapolation Tasks and MNIST Data Set
+- [Homework 4:](./homework4/REPORT.md) Neural Network Analysis and Model Comparison on Interpolation and Extrapolation Tasks and MNIST Data Set
