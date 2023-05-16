@@ -265,7 +265,7 @@ print(f'FFNN Mean Squared Error on data with rho={rho_35}: {mse_35}')
 plot_predictions(targets_35, predictions_35, f'FFNN for rho={rho_35}')
 ```
 
-### Predicting with LSTM
+#### Predicting with LSTM
 ```
 # Generate new data for rho=17
 rho_17 = 17
@@ -300,7 +300,7 @@ print(f'LSTM Mean Squared Error on data with rho={rho_35}: {mse_35}')
 plot_predictions(targets_35, predictions_35, f'LSTM for rho={rho_35}')
 ```
 
-### Predicting with RNN
+#### Predicting with RNN
 ```
 # Generate new data for rho=17
 rho_17 = 17
@@ -335,7 +335,7 @@ print(f'RNN Mean Squared Error on new data with rho={rho_35}: {mse_35}')
 plot_predictions(targets_35, predictions_35, f'RNN for rho={rho_35}')
 ```
 
-### Predicting with ESN
+#### Predicting with ESN
 ```
 # Generate new data for rho=17
 rho_17 = 17
