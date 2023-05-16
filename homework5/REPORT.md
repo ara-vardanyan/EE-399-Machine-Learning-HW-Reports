@@ -340,30 +340,64 @@ print(f'ESN Mean Squared Error on new data with rho={rho_35}: {mse_35}')
 plot_predictions(targets_35, predictions_35, f'ESN for rho={rho_35}')
 ```
 
-
 ---
 
 ## Computational Results
 
-### Extrapolation and Interpolation:
+### Error on Lorenz system with unseen values of rho
 
-| Task          | Metric        | Training | Testing |
-|---------------|---------------|----------|---------|
-| Extrapolation | Loss          | 0.0263   | 0.1827  |
-| Interpolation | Loss          | 0.0298   | 0.0553  |
-| Interpolation | Accuracy      | 97.3836% | 95.0551%|
-| Extrapolation | Accuracy      | 97.9064% | 82.5943%|
+Epochs: 25
 
+For rho=17:
 
-### MNIST Data Set Digit Classification:
+| Model | Mean Squared Error |
+|-------|-------------------|
+| RNN   | 0.006688 |
+| LSTM  | 0.007858 |
+| FFNN  | 0.009169 |
+| ESN   | 7.348020 |
 
-| Classifier          | Train Set Accuracy | Test Set Accuracy | Training Loss | Testing Loss |
-|---------------------|--------------------|-------------------|---------------|--------------|
-| Neural Network      | 96.78%             | 96.27%            | 0.1844        | 0.2654       |
-| SVM                 | 91.03%             | 90.65%            |               |              |
-| Decision Tree       | 100.00%            | 82.88%            |               |              |
+For rho=35:
 
-The performance of SVM and decision trees were retrieved from the report for [Homework 3](../homework3/REPORT.md) (where 102 PCA modes were used).
+| Model | Mean Squared Error |
+|-------|-------------------|
+| LSTM  | 0.012208 |
+| RNN   | 0.014535 |
+| FFNN  | 0.018447 |
+| ESN   | 9.366474 |
+
+<p>
+  <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/686628772fe8867e813148ff1d39f0c95545d441/homework5/figures/ffnn_predictions_rho_17.png'>
+</p>
+
+<p>
+  <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/686628772fe8867e813148ff1d39f0c95545d441/homework5/figures/ffnn_predictions_rho_35.png'>
+</p>
+
+<p>
+  <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/686628772fe8867e813148ff1d39f0c95545d441/homework5/figures/lstm_predictions_rho_17.png'>
+</p>
+
+<p>
+  <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/686628772fe8867e813148ff1d39f0c95545d441/homework5/figures/lstm_predictions_rho_35.png'>
+</p>
+
+<p>
+  <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/686628772fe8867e813148ff1d39f0c95545d441/homework5/figures/rnn_predictions_rho_17.png'>
+</p>
+
+<p>
+  <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/686628772fe8867e813148ff1d39f0c95545d441/homework5/figures/rnn_predictions_rho_35.png'>
+</p>
+
+<p>
+  <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/686628772fe8867e813148ff1d39f0c95545d441/homework5/figures/esn_predictions_rho_17.png'>
+</p>
+
+<p>
+  <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/686628772fe8867e813148ff1d39f0c95545d441/homework5/figures/esn_predictions_rho_35.png'>
+</p>
+
 
 ---
 
