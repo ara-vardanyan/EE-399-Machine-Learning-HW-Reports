@@ -281,21 +281,20 @@ plt.show()
 ### Performance of SHRED as a function of time lag
 
 <p>
-  <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/686628772fe8867e813148ff1d39f0c95545d441/homework5/figures/ffnn_predictions_rho_17.png'>
+  <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/1ba345647b22cc65f6f51a3ca68ee31c296e09fb/homework6/figures/SHREDPerformanceTimeLag.png'>
 </p>
 
 ### Performance of SHRED as a function of noise level
 
 <p>
-  <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/686628772fe8867e813148ff1d39f0c95545d441/homework5/figures/ffnn_predictions_rho_35.png'>
+  <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/1ba345647b22cc65f6f51a3ca68ee31c296e09fb/homework6/figures/SHREDPerformanceNoiseLevel.png'>
 </p>
 
 ### Performance of SHRED as a function of number of sensors
 
 <p>
-  <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/686628772fe8867e813148ff1d39f0c95545d441/homework5/figures/lstm_predictions_rho_35.png'>
+  <img src='https://github.com/ara-vardanyan/EE-399-Machine-Learning-HW-Reports/blob/1ba345647b22cc65f6f51a3ca68ee31c296e09fb/homework6/figures/SHREDPerformanceNumberOfSensors.png'>
 </p>
-
 
 
 ---
