@@ -300,3 +300,29 @@ plt.show()
 ---
 
 ## Summary and Conclusions
+
+In this report, we have successfully trained and evaluated the SHallow REcurrent Decoder (SHRED) model using sea-surface temperature data obtained from NOAA's Optimum Interpolation SST V2 dataset. The SHRED model, which combines an LSTM network with a shallow decoder network, is designed to reconstruct high-dimensional spatio-temporal fields from a trajectory of sensor measurements.
+
+Our work involved training the SHRED model and examining its performance under varying conditions. The parameters we manipulated included the time lag variable, Gaussian noise levels in the data, and the number of sensors.
+
+Based on our results, the time lag does have an impact on the performance of the SHRED model, as seen by the variation in Mean Squared Error (MSE) values. For lags of 26, 52, and 104, the model achieved relatively low MSE values (0.0245, 0.0255, and 0.0234 respectively), indicating that it can accurately predict the spatio-temporal data within these intervals.
+
+Interestingly, for lags of 78 and 130, the MSE jumped significantly to 0.240, implying a decrease in the model's performance. This suggests that the model's capability to infer the high-dimensional fields from sequences of measurements tends to diminish at these larger time lags.
+
+The impact of noise level on the SHRED model's performance is quite clear from the obtained results. As the noise level increases, the Mean Squared Error (MSE) value generally increases, indicating a degradation in the model's predictive performance.
+
+For low noise levels of 0.01, 0.05, and 0.1, the model maintains a relatively consistent and low MSE value (between 0.017 and 0.018). This suggests that the model is quite robust to low levels of noise, maintaining accurate prediction capabilities in spite of minor perturbations in the data.
+
+However, when the noise level increases to 0.2 and 0.5, the MSE jumps significantly to 0.205 and 0.315, respectively. This large increase in error signifies that the model's performance degrades considerably under these higher levels of noise.
+
+The influence of the number of sensors on the performance of the SHRED model is evident from the observed results. As the number of sensors increases, the Mean Squared Error (MSE) value generally decreases, indicating an improvement in the model's predictive performance.
+
+For a single sensor, the model recorded a fairly high MSE of 0.10. As we added more sensors, the MSE significantly decreased, registering 0.06 for two sensors, and further decreasing to 0.02 for three and four sensors. This suggests that additional sensor input greatly enhances the model's ability to accurately predict the spatio-temporal data, possibly due to the additional information and coverage provided by multiple sensor readings.
+
+However, when we increased the number of sensors to five, the MSE slightly increased to 0.03. This could be due to the model's diminishing return from the increased complexity and redundancy of the data as the number of sensors increases beyond a certain point.
+
+Therefore, we conclude that while increasing the number of sensors generally improves the performance of the SHRED model, care must be taken not to oversaturate the model with too many sensors, which could lead to minor performance degradation.
+
+In conclusion, our investigation has provided valuable insights into the performance characteristics of the SHRED model under varying conditions. From the impact of the time lag, the influence of noise level, to the effect of sensor numbers, our findings enhance our understanding of this LSTM-based model's behavior in reconstructing high-dimensional spatio-temporal fields.
+
+The observations from this study underscore the complexity of predicting spatio-temporal data and the challenges that arise from the variations in time lag, noise level, and sensor numbers. They highlight the need for careful selection and tuning of these parameters to achieve optimal performance.
